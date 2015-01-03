@@ -12,6 +12,18 @@
   Text Domain:  fullby-premium-customised
 */
 
+/* Incorporate parent style sheet */
+/* The reason I'm doing it this way is because this is the 
+  lowest maintenance cost approach even if it is not the
+  method recommended in the codex http://codex.wordpress.org/Child_Themes
+  That approach doesn't work well (or requires copy-paste programming)
+  when the parent theme uses mutiple style sheets and/or enqueues them
+  using some form of logic. * 
+  For reasons explained here: http://mor10.com/challenges-new-method-inheriting-parent-styles-wordpress-child-themes/
+ */
+
+@import '/wp-content/themes/fullby-premium/style.css';
+
 /* Customisations not available in theme customiser */
 
 .navbar-sub {background: #CFCFCF;}
