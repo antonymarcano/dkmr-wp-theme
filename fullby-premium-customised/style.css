@@ -1,0 +1,96 @@
+/*
+  Theme Name:   Fullby Premium Customised
+  Theme URI:    http://damanimarcano.com
+  Description:  Child theme of Fullby Premium to fix responsive issues and customise
+  Author:       Antony Marcano
+  Author URI:   http://damanimarcano.com
+  Template:     fullby-premium
+  Version:      0.0.1
+  License:      GNU General Public License v2 or later
+  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+  Text Domain:  fullby-premium-customised
+*/
+
+/* Customisations not available in theme customiser */
+
+.navbar-sub {background: #CFCFCF;}
+
+.navbar-fixed-top > div.navbar-header > button.navbar-toggle {display:none;}
+
+.seo-title {visibility:hidden;}
+
+#comments {visibility: hidden;}
+
+/* Responsive Layout Fixes */
+
+@media (max-width:600px) {
+  .logo-img{width:210px; overflow: hidden;}
+}
+
+/* Square to Portrait Ratios */
+@media (max-aspect-ratio: 1/1) {
+  .slide .item{height:44vh;}
+}
+
+@media (max-aspect-ratio: 1/1) and (min-width: 761px) {
+  .slide .item{height:40vh;}
+  .carousel {height:40vh;}
+}
+
+@media (max-aspect-ratio: 12/16) {
+  .slide .item{height:33vh;}
+}
+
+@media (max-aspect-ratio: 12/16) and (min-width: 761px) {
+  .carousel {height:33vh;}
+}
+
+@media (max-aspect-ratio: 9/16) {
+  .slide .item{height:25vh;}
+}
+
+@media (max-aspect-ratio: 9/16) and (min-width: 761px) {
+  .carousel {height:25vh;}
+}
+
+@media (max-aspect-ratio: 7/16) {
+  .slide .item{height:24vh;}
+}
+
+@media (max-aspect-ratio: 7/16) and (min-width: 761px) {
+  .carousel {height:24vh;}
+}
+
+@media (max-aspect-ratio: 5/16) {
+  .slide .item{height:15vh;}
+}
+
+@media (max-aspect-ratio: 5/16) and (min-width: 761px) {
+  .carousel {height:15vh;}
+}
+
+
+/* Landscape Ratios to Square */
+@media (min-aspect-ratio: 1/1) {
+  .slide .item{height:55vh;}
+}
+
+@media (min-aspect-ratio: 1/1) and (min-width: 761px) {
+  .carousel {height:55vh;}
+}
+
+@media (min-aspect-ratio: 16/11) {
+  .slide .item{height:80vh;}
+  .carousel {height:80vh;}
+}
+
+@media (min-aspect-ratio: 16/10) {
+  .slide .item{height:85vh;}
+  .carousel {height:85vh;}
+}
+
+@media (min-aspect-ratio: 16/6) {
+  .slide .item{height:100vh;}
+  .carousel {height:100vh;}
+}
